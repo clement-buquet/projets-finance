@@ -66,9 +66,13 @@ winget install --id Python.Python.3.13 -e --source winget
 
 gh auth login
 
+git config --global
+
 gh repo clone clement-buquet/projets-finance
 
 cd projets-finance
+
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
 py -m venv .venv
 
